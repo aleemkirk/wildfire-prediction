@@ -74,7 +74,7 @@ $ conda create --name <env> --file requirements.txtrequirements.txt
 - Open ```/Code/Note Book.ipynb``` and replace ```data_path``` with your data directory
 
 ```python
-data_path = '../Data/dataset.zarr'  # Update with your actual data path
+data_path = '../Data/dataset.zarr'  # Update with your data path
 
 try:
     ds = xr.open_zarr(data_path)
