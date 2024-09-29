@@ -63,7 +63,7 @@ Visualization of burned areas around the globe from 2001-2020.
 
 > Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice.
 
-> Install Python 3.11
+> Install Python 3.11 or later
 
 > Install all depepndancies from ```requirements.txt```.
 
