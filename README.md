@@ -77,9 +77,9 @@ Visualization of burned areas around the globe from 2001-2020.
 
 ## Random Forest:
 
-Recall: 77%
-Precision: 86%
-F1-score: 81%
+- Recall: 77%
+- Precision: 86%
+- F1-score: 81%
 Inference: This model provides a good balance between high recall and precision, making it highly reliable for detecting wildfires without generating too many false alarms.
 
 ## LSTM (ReLU):
