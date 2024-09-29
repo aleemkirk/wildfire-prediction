@@ -34,7 +34,7 @@ The SeasFire Cube contains 21 years of data, spanning from 2001 to 2021. The dat
 
 This project uses 10 different variables selected based on their relevance and usage in burned area prediction tasks from existing literature. These variables were standardized before use, except for the cube coordinates.
 
-|  **Full Name**       | **Variable Name**| 
+|  **Input Features**       | **Variable Name**| 
 | ------------- |:-------------:| 
 | Mean Sea level pressure      | mslp | 
 | Total precipitation      | tp   |  
@@ -53,7 +53,9 @@ This project uses 10 different variables selected based on their relevance and u
 
 ![Histograms on input features](/Images/input_feature_dist.png)
 
-
+## Target Variable
+Visualization of burned areas around the globe from 2001-2020.
+![Target Variable Visualization](/Images/BAs_GWIS_gif_fps09.gif)
 
 
 # Usage
