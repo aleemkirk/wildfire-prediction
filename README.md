@@ -30,5 +30,15 @@ The SeasFire Cube is a scientific datacube designed for global seasonal fire for
 
 The SeasFire Cube contains 21 years of data, spanning from 2001 to 2021. The data is organized with an 8-day time resolution and a 0.25-degree grid resolution, providing a granular and high-resolution dataset for analysis.
 
+## Input Features
+
+
+
+# Usage
+
+
+# Results
+
+
 
 
