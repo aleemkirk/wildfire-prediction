@@ -75,8 +75,52 @@ Visualization of burned areas around the globe from 2001-2020.
 
 # Results
 
+## Random Forest:
+
+Recall: 77%
+Precision: 86%
+F1-score: 81%
+Inference: This model provides a good balance between high recall and precision, making it highly reliable for detecting wildfires without generating too many false alarms.
+
+## LSTM (ReLU):
+
+- Recall: 100%
+- Precision: 12.56%
+- F1-score: 22%
+
+Inference: While the recall is very high, indicating that it detects most wildfires, the precision is very low. This means it generates a lot of false positives, which might not be practical for resource management.
+
+## FeedForward NN:
+
+- Recall: 61%
+- Precision: 73%
+- F1-score: 67%
+Inference: This model has moderate precision but low recall, meaning it misses a significant number of wildfires, which is not ideal for this application.
+
+## Logistic Regression (L2):
+
+- Recall: 41%
+- Precision: 67%
+- F1-score: 51%
+
+## Logistic Regression (L1):
+
+- Recall: 43%
+- Precision: 68%
+- F1-score: 53%
+
+Inference: Similar to FeedForward NN, it has low recall and moderate precision, making it less effective for wildfire prediction.
+
+## Predictions
+
+![Predictions](/Images/predictions.png)
 
 
 
+# Conclusion
 
+Given the importance of detecting as many wildfires as possible while maintaining a reasonable number of false positives:
 
+Best Model: Random Forest is the best choice because it offers a strong balance between high recall and high precision, reflected in its high F1-score. This balance ensures that most wildfires are detected while keeping the number of false positives manageable.
+
+Considerations: Depending on resource availability and the critical nature of missing a wildfire, the LSTM model with its high recall could be considered, but the low precision means many false positives, requiring significant resources to manage.
