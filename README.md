@@ -32,13 +32,27 @@ The SeasFire Cube contains 21 years of data, spanning from 2001 to 2021. The dat
 
 ## Input Features and Target Variable
 
-Colons can be used to align columns.
+This project uses 10 different variables selected based on their relevance and usage in burned area prediction tasks from existing literature. These variables were standardized before use, except for the cube coordinates.
 
-|  Full Name       | Variable Name  
+|  **Full Name**       | **Variable Name**| 
 | ------------- |:-------------:| 
 | Mean Sea level pressure      | mslp | 
 | Total precipitation      | tp   |  
 | Vapor Pressure Deficit | vpd  | 
+| Sea surface temperature |  sst | 
+| Temperaeture at 2 meters - Mean |  t2m_mean | 
+| Surface solar radiation downwards | ssrd  | 
+| Volumetric soil water level 1| swvl1   | 
+| Land surface temperature at day| lst_day   | 
+| Normalized Difference Vegetation Index| ndvi   | 
+|  Population Density |  pop_dens |
+| **Target** | **Variable Name**  | 
+| Burned Areas (as binary)| gwis_ba  |  
+
+## Input Feature Distribution
+
+![Histograms on input features](/Images/input_feature_dist.png)
+
 
 
 
