@@ -54,12 +54,20 @@ This project uses 10 different variables selected based on their relevance and u
 ![Histograms on input features](/Images/input_feature_dist.png)
 
 ## Target Variable
+
 Visualization of burned areas around the globe from 2001-2020.
 ![Target Variable Visualization](/Images/BAs_GWIS_gif_fps09.gif)
 
 
 # Usage
 
+> Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice.
+
+> Install all depepndancies from ```requirements.txt```.
+
+> Open ```/Code/Note Book.ipynb``` and replace ```data_path``` with your data directory.
+
+> Run ```/Code/Note Book.ipynb```.
 
 # Results
 
