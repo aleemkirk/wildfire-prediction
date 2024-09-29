@@ -80,6 +80,7 @@ Visualization of burned areas around the globe from 2001-2020.
 - Recall: 77%
 - Precision: 86%
 - F1-score: 81%
+
 Inference: This model provides a good balance between high recall and precision, making it highly reliable for detecting wildfires without generating too many false alarms.
 
 ## LSTM (ReLU):
@@ -95,6 +96,7 @@ Inference: While the recall is very high, indicating that it detects most wildfi
 - Recall: 61%
 - Precision: 73%
 - F1-score: 67%
+
 Inference: This model has moderate precision but low recall, meaning it misses a significant number of wildfires, which is not ideal for this application.
 
 ## Logistic Regression (L2):
