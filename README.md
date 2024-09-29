@@ -63,17 +63,28 @@ Visualization of burned areas around the globe from 2001-2020.
 
 # Usage
 
-- Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice.
+- Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice
 
-- Install Python ```3.11``` or later and install all dependancies from ```requirements.txt```.
+- Install Python ```3.11``` or later and install all dependancies from ```requirements.txt```
 
-```python 
+``` 
 $ conda create --name <env> --file requirements.txtrequirements.txt
 ```
 
-- Open ```/Code/Note Book.ipynb``` and replace ```data_path``` with your data directory.
+- Open ```/Code/Note Book.ipynb``` and replace ```data_path``` with your data directory
 
-- Run ```/Code/Note Book.ipynb```.
+```python
+data_path = '../Data/dataset.zarr'  # Update with your actual data path
+
+try:
+    ds = xr.open_zarr(data_path)
+except ValueError as e:
+    print(f"Error loading dataset: {e}")
+    raise
+```
+
+- Run ```/Code/Note Book.ipynb```
+
 
 # Results
 
