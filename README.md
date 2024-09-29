@@ -49,6 +49,8 @@ This project uses 10 different variables selected based on their relevance and u
 | **Target** | **Variable Name**  | 
 | Burned Areas (as binary)| gwis_ba  |  
 
+![Input Vars](/Images/input%20vars.png)
+
 ## Input Feature Distribution
 
 ![Histograms on input features](/Images/input_feature_dist.png)
