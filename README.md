@@ -144,12 +144,10 @@ Inference: Similar to FeedForward NN, it has low recall and moderate precision, 
 ![Predictions](/Images/predictions.png)
 
 
-# Conclusion
+# Conclusion and Recommendations
 
-Best Model: Random Forest is the best choice because it offers a strong balance between high recall and high precision, reflected in its high F1-score. This balance ensures that most wildfires are detected while keeping the number of false positives manageable.
+Random Forest is the best choice because it offers a strong balance between high recall and high precision, reflected in its high F1-score. This balance ensures that most wildfires are detected while keeping the number of false positives manageable.
 
-## Recommendations
+Due to the high correlation of wildfire spread to vegetation, soil water solar irradiance and humidity, it is recommended that policies be developed to control the growth of plant life in heavily populated areas which may be exposed to excessive solar radiation and little rainfall. 
 
- Due to the high correlation of wildfire spread to vegetation, soil water solar irradiance and humidity, it is recommended that policies be developed to control the growth of plant life in heavily populated areas which may be exposed to excessive solar radiation and little rainfall. 
- 
- Fire retardants or barriers can be strategically placed around homes or buildings in these areas especially during extended periods of hot and dry weather. Governments can also build more fire stations to decrease the response times and spread of wildfires. 
+Fire retardants or barriers can be strategically placed around homes or buildings in these areas especially during extended periods of hot and dry weather. Governments can also build more fire stations to decrease the response times and spread of wildfires. 
