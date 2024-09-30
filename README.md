@@ -27,6 +27,30 @@ Overall, the Random Forest model performed best when predicting the spread of wi
 Logistic regression worked well but failed to capture the wildfire spread in the Asian and Australian continents. This is likely due to the linear behaviour of regression models failing to capture the nonlinearities in the wildfire spread. 
 
 
+# Usage
+
+- Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice
+
+- Install Python ```3.11``` or later and install all dependancies from ```requirements.txt```
+
+``` 
+$ conda create --name <env> --file requirements.txtrequirements.txt
+```
+
+- Open ```/Code/Note Book.ipynb``` and replace ```data_path``` with your data directory
+
+```python
+data_path = '../Data/dataset.zarr'  # Update with your data path
+
+try:
+    ds = xr.open_zarr(data_path)
+except ValueError as e:
+    print(f"Error loading dataset: {e}")
+    raise
+```
+
+- Run ```/Code/Note Book.ipynb```
+
 # Dataset
 All models were trained using the [SeasFire dataset](https://zenodo.org/records/7108392). 
 
@@ -66,31 +90,6 @@ This project uses 10 different variables selected based on their relevance and u
 
 Visualization of burned areas around the globe from 2001-2020.
 ![Target Variable Visualization](/Images/BAs_GWIS_gif_fps09.gif)
-
-
-# Usage
-
-- Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice
-
-- Install Python ```3.11``` or later and install all dependancies from ```requirements.txt```
-
-``` 
-$ conda create --name <env> --file requirements.txtrequirements.txt
-```
-
-- Open ```/Code/Note Book.ipynb``` and replace ```data_path``` with your data directory
-
-```python
-data_path = '../Data/dataset.zarr'  # Update with your data path
-
-try:
-    ds = xr.open_zarr(data_path)
-except ValueError as e:
-    print(f"Error loading dataset: {e}")
-    raise
-```
-
-- Run ```/Code/Note Book.ipynb```
 
 
 # Results
