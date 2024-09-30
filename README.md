@@ -88,39 +88,44 @@ except ValueError as e:
 
 ## Random Forest:
 
-- Recall: 77%
-- Precision: 86%
-- F1-score: 81%
+- Accuracy:    96%
+- Precision:   86%
+- Recall:      77%
+- F1-score:    81%
 
 Inference: This model provides a good balance between high recall and precision, making it highly reliable for detecting wildfires without generating too many false alarms.
 
 ## LSTM (ReLU):
 
-- Recall: 100%
-- Precision: 12.56%
-- F1-score: 22%
+- Accuracy:    12%
+- Precision:   12%
+- Recall:      100%
+- F1-score:    22%
 
 Inference: While the recall is very high, indicating that it detects most wildfires, the precision is very low. This means it generates a lot of false positives, which might not be practical for resource management.
 
 ## FeedForward NN:
 
-- Recall: 61%
-- Precision: 73%
-- F1-score: 67%
+- Accuracy:    69%
+- Precision:   73%
+- Recall:      61%
+- F1-score:    67%
 
 Inference: This model has moderate precision but low recall, meaning it misses a significant number of wildfires, which is not ideal for this application.
 
 ## Logistic Regression (L2):
 
-- Recall: 41%
-- Precision: 67%
-- F1-score: 51%
+- Accuracy:    91%
+- Recall:      41%
+- Precision:   67%
+- F1-score:    51%
 
 ## Logistic Regression (L1):
 
-- Recall: 43%
-- Precision: 68%
-- F1-score: 53%
+- Accuracy:    91%
+- Precision:   68%
+- Recall:      43%
+- F1-score:    53%
 
 Inference: Similar to FeedForward NN, it has low recall and moderate precision, making it less effective for wildfire prediction.
 
