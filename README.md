@@ -18,6 +18,13 @@ This project expands upon the findings of Michail et al. [^1] and Prapas et al. 
 
 [^2]: Prapas, I., Ahuja, A., Kondylatos, S., Karasante, I., Panagiotou, E., Alonso, L., Davalas, C., Michail, D., Carvalhais, N., & Papoutsis, I. (n.d.). Deep Learning for Global Wildfire Forecasting.
 
+# Executive Summary
+
+Four machine learning models were used to predict the occurrence and spread of wildfires across Europe, Africa and Australia. Both linear and non-linear models were compared, they were L1 Logistic Regression, L2 Logistic Regression, Random Forest and LSTM. 
+
+Overall, the Random Forest model performed the best when predicting t
+
+
 # Dataset
 All models were trained using the [SeasFire dataset](https://zenodo.org/records/7108392). 
 
@@ -134,8 +141,7 @@ Inference: Similar to FeedForward NN, it has low recall and moderate precision, 
 ![Predictions](/Images/predictions.png)
 
 
-
-# Conclusion
+# Conclusion and Recommendations
 
 Given the importance of detecting as many wildfires as possible while maintaining a reasonable number of false positives:
 
