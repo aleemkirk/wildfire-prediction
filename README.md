@@ -27,7 +27,7 @@ Overall, the Random Forest model performed best when predicting the spread of wi
 Logistic regression worked well but failed to capture the wildfire spread in the Asian and Australian continents. This is likely due to the linear behaviour of regression models failing to capture the nonlinearities in the wildfire spread. 
 
 
-# Usage
+# Getting Started
 
 - Download the [SeasFire dataset](https://zenodo.org/records/7108392) and place in a directory of your choice
 
