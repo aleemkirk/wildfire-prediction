@@ -143,6 +143,9 @@ Inference: Similar to FeedForward NN, it has low recall and moderate precision, 
 
 ![Predictions](/Images/predictions.png)
 
+The linear models fail to adequately capture the fire spread in Asia and Australia. This is likely due to their inability to capture nonlinearities in the wildfire behaviour as it spreads. 
+
+Random forest performs better but still misses some spread patters in Asia. 
 
 # Conclusion and Recommendations
 
