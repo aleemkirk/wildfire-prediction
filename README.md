@@ -22,9 +22,11 @@ This project expands upon the findings of Michail et al. [^1] and Prapas et al. 
 
 Four machine learning models were used to predict the occurrence and spread of wildfires across Europe, Africa, Asia and Australia. Both linear and non-linear models were compared, they were L1 Logistic Regression, L2 Logistic Regression, Random Forest and LSTM. 
 
-Overall, the Random Forest model performed best when predicting the spread of wildfires 8 days into the future. achieving a precision of 86% and recall of 77%. Neural networks performed the worst however, this may be attributed to the lack of hyperparameter tuning. 
+Overall, the Random Forest model performed best when predicting the spread of wildfires 8 days into the future. achieving a precision of 86% and recall of 77%. This model placed high importance on the normalized difference vegetation index (ndvi),  soil water level (swvl1), solar irradiance (ssrd) and vapor pressure deficit (vpd).
 
-Logistic regression worked well but failed to capture the wildfire spread in the Asian and Australian continents. This is likely due to the linear behaviour of regression models failing to capture the nonlinearities in the wildfire spread. 
+Neural networks performed the worst however, this may be attributed to the lack of hyperparameter tuning and low epoch iterations during training. 
+
+Logistic regression worked well but failed to accurately capture the wildfire spread in Asia and Australia. This is likely due to the linear behaviour of regression models failing to capture the nonlinearities in the wildfire spread. 
 
 
 # Getting Started
@@ -142,10 +144,12 @@ Inference: Similar to FeedForward NN, it has low recall and moderate precision, 
 ![Predictions](/Images/predictions.png)
 
 
-# Conclusion and Recommendations
-
-Given the importance of detecting as many wildfires as possible while maintaining a reasonable number of false positives:
+# Conclusion
 
 Best Model: Random Forest is the best choice because it offers a strong balance between high recall and high precision, reflected in its high F1-score. This balance ensures that most wildfires are detected while keeping the number of false positives manageable.
 
-Considerations: Depending on resource availability and the critical nature of missing a wildfire, the LSTM model with its high recall could be considered, but the low precision means many false positives, requiring significant resources to manage.
+## Recommendations
+
+ Due to the high correlation of wildfire spread to vegetation, soil water solar irradiance and humidity, it is recommended that policies be developed to control the growth of plant life in heavily populated areas which may be exposed to excessive solar radiation and little rainfall. 
+ 
+ Fire retardants or barriers can be strategically placed around homes or buildings in these areas especially during extended periods of hot and dry weather. Governments can also build more fire stations to decrease the response times and spread of wildfires. 
