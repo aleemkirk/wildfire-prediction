@@ -20,9 +20,11 @@ This project expands upon the findings of Michail et al. [^1] and Prapas et al. 
 
 # Executive Summary
 
-Four machine learning models were used to predict the occurrence and spread of wildfires across Europe, Africa and Australia. Both linear and non-linear models were compared, they were L1 Logistic Regression, L2 Logistic Regression, Random Forest and LSTM. 
+Four machine learning models were used to predict the occurrence and spread of wildfires across Europe, Africa, Asia and Australia. Both linear and non-linear models were compared, they were L1 Logistic Regression, L2 Logistic Regression, Random Forest and LSTM. 
 
-Overall, the Random Forest model performed the best when predicting t
+Overall, the Random Forest model performed best when predicting the spread of wildfires 8 days into the future. achieving a precision of 86% and recall of 77%. Neural networks performed the worst however, this may be attributed to the lack of hyperparameter tuning. 
+
+Logistic regression worked well but failed to capture the wildfire spread in the Asian and Australian continents. This is likely due to the linear behaviour of regression models failing to capture the nonlinearities in the wildfire spread. 
 
 
 # Dataset
